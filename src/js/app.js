@@ -12,7 +12,7 @@ export default class Character {
       }
     } */
 
-    set setStoned(val) {
+    set Stoned(val) {
       this.stoned = val;
     }
 

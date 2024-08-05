@@ -20,7 +20,7 @@ test('attack test', () => {
     const result1 = daemon.xp;
 
     expect(magician.getStoned).toBe(false);
-    magician.setStoned = true;
+    magician.Stoned = true;
     expect(magician.getStoned).toBe(true);
 
 
