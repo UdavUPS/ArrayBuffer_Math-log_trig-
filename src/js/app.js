@@ -5,11 +5,19 @@ export default class Character {
       this.xp = xp;
     }
   
-    get getStoned() {
+/*     get getStoned() {
       if (this.stoned) { this.stoned = false }
       else {
         this.stoned = true
       }
+    } */
+
+    set setStoned(val) {
+      this.stoned = val;
+    }
+
+    get getStoned() {
+      return this.stoned;
     }
   
     attack(distance, enemy) {

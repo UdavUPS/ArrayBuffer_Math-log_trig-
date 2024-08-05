@@ -18,8 +18,12 @@ test('attack test', () => {
 
     magician.attack(2, daemon);
     const result1 = daemon.xp;
-    
-    magician.getStoned;
+
+    expect(magician.getStoned).toBe(false);
+    magician.setStoned = true;
+    expect(magician.getStoned).toBe(true);
+
+
     magician.attack(2, daemon);
     const result2 = daemon.xp;
     
