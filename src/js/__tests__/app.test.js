@@ -16,20 +16,20 @@ test('attack test', () => {
     const magician = new Magician();
     const daemon = new Daemon();
 
-    magician.Attack= daemon;
+    magician.attack= daemon;
     const result1 = daemon.xp;
 
-    expect(magician.getStoned).toBe(false);
-    magician.Stoned = true;
-    expect(magician.getStoned).toBe(true);
+    expect(magician.stoned).toBe(false);  //getter
+    magician.stoned = true;
+    expect(magician.stoned).toBe(true);  //getter
 
 
-    magician.Attack= daemon;
+    magician.attack= daemon;
     const result2 = daemon.xp;
     
     
 
   expect(result1).toBe(910);
   expect(result2).toBe(825);
-  expect(magician.Attack).toBe('Дистанция атаки: 2');
+  expect(magician.attack).toBe('Дистанция атаки: 2');
 });
